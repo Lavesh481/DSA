@@ -7,3 +7,5 @@
 ## 3) Print Random Number from 1-20
 
 ## 4) print Given Input 
+
+## 5) print various inputs
