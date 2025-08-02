@@ -10,4 +10,4 @@
 
 ## 5) Print Various inputs
 
-## 6) Print Square root of a number 
+## 6) Print Square root of  a   random number 
