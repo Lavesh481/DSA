@@ -6,6 +6,8 @@
 
 ## 3) Print Random Number from 1-20
 
-## 4) print Given Input 
+## 4) Print Given Input 
 
-## 5) print various inputs
+## 5) Print Various inputs
+
+## 6) Print Square root of a number 
