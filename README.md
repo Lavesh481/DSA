@@ -11,3 +11,5 @@
 ## 5) Print Various inputs
 
 ## 6) Print Square root of  a   random number 
+
+## 7) Print square root by adding input
