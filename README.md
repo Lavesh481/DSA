@@ -13,3 +13,5 @@
 ## 6) Print Square root of  a   random number 
 
 ## 7) Print square root by adding input
+ 
+## 8) Print 2^number by input command 
