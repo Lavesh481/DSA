@@ -1,4 +1,0 @@
-toy
-bus
-car
-train
