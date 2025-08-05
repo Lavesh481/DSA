@@ -17,3 +17,5 @@
 ## 8) Print 2^number by input command 
 
 ## 9) Print random choice of cards 
+
+## 10) Print len of a name  Maximilianus Alexander Montgomery Fitzgerald III
