@@ -22,6 +22,9 @@
 
 ## 11) Print hello world by using define function 
 
-## 12) my name is lavesh
+## 12) Print hello name using define function
+
+## 13) Print sum of numbers using define function
+
 
 
