@@ -5,3 +5,4 @@ c = np.array([[[9,10,11,12,13,14]]])
 print(a.ndim)
 print(b.ndim)
 print(c.ndim)
+

@@ -26,5 +26,13 @@
 
 ## 13) Print sum of numbers using define function
 
+## 14) Print table of 2
 
+## 15) Print table upto 10
+
+## 16) Print array [1,2,3,4,5]
+ 
+ ## 17) Print 1d,2d,3d array
+
+ ## 18) Print a  graph using matplotlib 
 
