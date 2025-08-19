@@ -36,3 +36,6 @@
 
  ## 18) Print a  graph using matplotlib 
 
+ ## 19) Print a v graph
+
+ ##  20) Print a graph using marker
