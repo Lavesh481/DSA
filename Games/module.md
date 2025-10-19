@@ -1,6 +1,6 @@
 ### pygame 
 It is my first pygame ,this is today's update.
 ---
-![alt text](image.png)
+![Output](image.png)
 ---
-![alt text](image-1.png)
+![Main code](image-1.png)
