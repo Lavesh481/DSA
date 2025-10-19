@@ -1,6 +1,6 @@
 ## pygame
 
-It is my first pygame ,this is today's update.
+DAY-1 It is my first pygame ,this is today's update.
 ---
 ![Output](image.png)
 ---
