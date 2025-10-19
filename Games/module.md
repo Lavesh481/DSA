@@ -2,3 +2,5 @@
 It is my first pygame ,this is today's update.
 ---
 ![alt text](image.png)
+---
+![alt text](image-1.png)
