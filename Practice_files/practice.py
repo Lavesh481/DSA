@@ -1,4 +1,5 @@
 name = input("Enter your name: ")
+
 print(f"Hello {name}.")
 x =input("what is your favoritre color? ")
 y = input("what is your favorite car?")
