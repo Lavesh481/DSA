@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>ML Advanced Grid - Google Forms Mock</title>
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f0ebf8;
+            padding: 20px;
+        }
+
+        .form-container {
+            max-width: 770px;
+            margin: auto;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12);
+            border-top: 10px solid #673ab7;
+            padding: 0 0 20px 0;
+        }
+
+        .header {
+            padding: 24px;
+        }
+
+        .header h1 {
+            font-size: 32px;
+            margin: 0;
+        }
+
+        .header p {
+            color: #202124;
+            margin-top: 8px;
+        }
+
+        .question-box {
+            padding: 24px;
+            border: 1px solid #dadce0;
+            border-radius: 8px;
+            margin: 12px 20px;
+        }
+
+        .question-title {
+            font-size: 16px;
+            font-weight: 500;
+            margin-bottom: 20px;
+            color: #202124;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            table-layout: fixed;
+        }
+
+        th {
+            font-weight: normal;
+            color: #70757a;
+            font-size: 14px;
+            text-align: center;
+            padding: 12px 0;
+        }
+
+        td {
+            text-align: center;
+            padding: 12px 0;
+            border-top: 1px solid #dadce0;
+        }
+
+        .row-label {
+            text-align: left;
+            color: #202124;
+            font-size: 14px;
+            width: 30%;
+        }
+
+        .radio-cell {
+            cursor: pointer;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            width: 100%;
+        }
+
+        .radio-circle {
+            width: 20px;
+            height: 20px;
+            border: 2px solid #5f6368;
+            border-radius: 50%;
+            position: relative;
+        }
+
+        [aria-checked="true"] .radio-circle {
+            border-color: #673ab7;
+        }
+
+        [aria-checked="true"] .radio-circle::after {
+            content: '';
+            position: absolute;
+            width: 10px;
+            height: 10px;
+            background: #673ab7;
+            border-radius: 50%;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="form-container">
+        <div class="header">
+            <h1>Advanced ML Architecture Quiz</h1>
+            <p>Match the technical component to its primary theoretical benefit.</p>
+        </div>
+
+        <div class="geS5ne question-box" role="listitem">
+            <div class="question-title" role="heading">Match the following ML concepts:</div>
+            <table>
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th>Prevents Overfitting</th>
+                        <th>Adaptive Learning Rate</th>
+                        <th>Vanishing Gradients Fix</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="row-label">Dropout (CNN)</td>
+                        <td>
+                            <div class="radio-cell" role="radio" aria-label="Dropout prevents overfitting"
+                                aria-checked="false" tabindex="0">
+                                <div class="radio-circle"></div>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="radio-cell" role="radio" aria-label="Dropout adaptive lr" aria-checked="false"
+                                tabindex="0">
+                                <div class="radio-circle"></div>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="radio-cell" role="radio" aria-label="Dropout vanishing grad"
+                                aria-checked="false" tabindex="0">
+                                <div class="radio-circle"></div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="row-label">Adam Optimizer</td>
+                        <td>
+                            <div class="radio-cell" role="radio" aria-label="Adam prevents overfitting"
+                                aria-checked="false" tabindex="0">
+                                <div class="radio-circle"></div>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="radio-cell" role="radio" aria-label="Adam adaptive lr" aria-checked="false"
+                                tabindex="0">
+                                <div class="radio-circle"></div>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="radio-cell" role="radio" aria-label="Adam vanishing grad" aria-checked="false"
+                                tabindex="0">
+                                <div class="radio-circle"></div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="row-label">Batch Normalization</td>
+                        <td>
+                            <div class="radio-cell" role="radio" aria-label="Batchnorm prevents overfitting"
+                                aria-checked="false" tabindex="0">
+                                <div class="radio-circle"></div>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="radio-cell" role="radio" aria-label="Batchnorm adaptive lr" aria-checked="false"
+                                tabindex="0">
+                                <div class="radio-circle"></div>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="radio-cell" role="radio" aria-label="Batchnorm vanishing grad"
+                                aria-checked="false" tabindex="0">
+                                <div class="radio-circle"></div>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="geS5ne question-box" role="listitem">
+            <div class="question-title" role="heading">Short Answer: Mathematical Formula</div>
+            <p style="font-size: 14px; color: #5f6368;">Given a binary classification problem, what is the formula for
+                Cross-Entropy Loss?</p>
+            <input type="text" role="textbox" aria-label="Cross-Entropy Formula"
+                style="width: 100%; border: none; border-bottom: 1px solid #dadce0; padding: 8px 0; outline: none;">
+        </div>
+    </div>
+
+    <script>
+        document.querySelectorAll('[role="radio"]').forEach(radio => {
+            radio.onclick = function () {
+                const row = this.closest('tr');
+                row.querySelectorAll('[role="radio"]').forEach(r => r.setAttribute('aria-checked', 'false'));
+                this.setAttribute('aria-checked', 'true');
+            };
+        });
+    </script>
+</body>
+
+</html>

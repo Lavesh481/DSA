@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Table Solving Test - FormBot</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            padding: 20px;
+            background: #f8f9fa;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        th,
+        td {
+            border: 1px solid #dee2e6;
+            padding: 12px;
+            text-align: left;
+        }
+
+        th {
+            background: #e9ecef;
+        }
+
+        input {
+            width: 90%;
+            padding: 8px;
+            border: 1px solid #ced4da;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Economic Data Entry</h1>
+        <p>Please fill in the missing GDP growth rates for the following countries.</p>
+        <table>
+            <thead>
+                <tr>
+                    <th>Country</th>
+                    <th>2023 GDP Growth (%)</th>
+                    <th>2024 Predicted (%)</th>
+                    <th>Primary Industry</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>India</td>
+                    <td><input type="text" placeholder="Enter value" aria-label="India 2023 GDP"></td>
+                    <td>7.0</td>
+                    <td>Services</td>
+                </tr>
+                <tr>
+                    <td>USA</td>
+                    <td>2.5</td>
+                    <td><input type="text" placeholder="Enter value" aria-label="USA 2024 Prediction"></td>
+                    <td>Technology</td>
+                </tr>
+                <tr>
+                    <td>Germany</td>
+                    <td>-0.3</td>
+                    <td>0.5</td>
+                    <td><input type="text" placeholder="Enter value" aria-label="Germany Industry"></td>
+                </tr>
+            </tbody>
+        </table>
+        <button id="submit" style="margin-top: 20px; padding: 10px 20px;">Submit</button>
+    </div>
+</body>
+
+</html>

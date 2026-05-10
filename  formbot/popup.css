@@ -1,0 +1,161 @@
+:root {
+    --primary: #6366f1;
+    --primary-hover: #4f46e5;
+    --bg: #0f172a;
+    --card-bg: #1e293b;
+    --text: #f8fafc;
+    --text-dim: #94a3b8;
+    --success: #10b981;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', -apple-system, sans-serif;
+}
+
+body {
+    width: 320px;
+    background-color: var(--bg);
+    color: var(--text);
+    padding: 20px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+header {
+    text-align: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 4px;
+}
+
+.logo .icon {
+    font-size: 1.5rem;
+}
+
+h1 {
+    font-size: 1.5rem;
+    background: linear-gradient(135deg, #6366f1 0%, #a855f7 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+header p {
+    font-size: 0.875rem;
+    color: var(--text-dim);
+}
+
+.primary-btn {
+    width: 100%;
+    padding: 12px;
+    background-color: var(--primary);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+.primary-btn:hover {
+    background-color: var(--primary-hover);
+    transform: translateY(-1px);
+}
+
+.ai-control {
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.875rem;
+    color: var(--text-dim);
+}
+
+.settings-icon {
+    cursor: pointer;
+    padding: 4px;
+    filter: grayscale(1);
+    transition: filter 0.2s;
+}
+
+.settings-icon:hover {
+    filter: grayscale(0);
+}
+
+.settings-panel {
+    margin-top: 10px;
+    display: flex;
+    gap: 12px;
+    flex-direction: column;
+    padding: 12px;
+    background: rgba(255, 255, 255, 0.03);
+    border-radius: 8px;
+}
+
+.field {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.field label {
+    font-size: 0.75rem;
+    color: var(--text-dim);
+}
+
+.hidden {
+    display: none;
+}
+
+#apiKey,
+#aiProvider {
+    width: 100%;
+    padding: 8px;
+    border-radius: 6px;
+    border: 1px solid #334155;
+    background: var(--card-bg);
+    color: var(--text);
+    font-size: 0.75rem;
+}
+
+.secondary-btn {
+    margin-top: 5px;
+    padding: 10px;
+    background-color: var(--primary);
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 0.75rem;
+    font-weight: 600;
+}
+
+.status-msg {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 0.875rem;
+    color: var(--text-dim);
+    min-height: 1.2em;
+}
+
+footer {
+    border-top: 1px solid #334155;
+    padding-top: 15px;
+    text-align: center;
+    font-size: 0.75rem;
+    color: var(--text-dim);
+}

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Vision Solving Test - FormBot</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            padding: 20px;
+            background: #f0f2f5;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: auto;
+            background: white;
+            padding: 30px;
+            border-radius: 8px;
+        }
+
+        .diagram {
+            background: #eee;
+            height: 200px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 2px dashed #ccc;
+            margin-bottom: 20px;
+            position: relative;
+        }
+
+        .diagram::after {
+            content: "Diagram: A Neural Network with 3 Input nodes, 2 Hidden nodes, and 1 Output node.";
+            text-align: center;
+            color: #666;
+            padding: 20px;
+        }
+
+        .question {
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+
+        .options {
+            margin-bottom: 20px;
+        }
+
+        .option {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Machine Learning Quiz</h1>
+        <div class="question-box geS5ne">
+            <div class="diagram" title="Neural Network Architecture Diagram"></div>
+            <div class="question" role="heading">Based on the diagram above, how many hidden layers are shown?</div>
+            <div class="options" role="radiogroup">
+                <div class="option">
+                    <input type="radio" name="q1" id="q1a" value="1">
+                    <label for="q1a">1 Hidden Layer</label>
+                </div>
+                <div class="option">
+                    <input type="radio" name="q1" id="q1b" value="2">
+                    <label for="q1b">2 Hidden Layers</label>
+                </div>
+                <div class="option">
+                    <input type="radio" name="q1" id="q1c" value="3">
+                    <label for="q1c">3 Hidden Layers</label>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

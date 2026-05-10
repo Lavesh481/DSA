@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FormBot - AI Auto-Filler</title>
+    <link rel="stylesheet" href="popup.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">
+                <span class="icon">🤖</span>
+                <h1>FormBot</h1>
+            </div>
+            <p>AI Form Auto-Filler</p>
+        </header>
+        <main>
+            <button id="fillButton" class="primary-btn">Auto-Fill Form</button>
+
+            <div class="ai-control">
+                <label><input type="checkbox" id="useAI"> Use AI Solving</label>
+                <span id="settingsBtn" class="settings-icon">⚙️</span>
+            </div>
+
+            <div id="aiSettings" class="settings-panel hidden">
+                <div class="field">
+                    <label id="keyLabel">Groq API Key</label>
+                    <input type="password" id="apiKey" placeholder="Paste Groq API Key">
+                </div>
+                <button id="saveKey" class="secondary-btn">Save Settings</button>
+            </div>
+
+            <div id="status" class="status-msg">Ready</div>
+        </main>
+        <footer>
+            <span>v1.4</span>
+        </footer>
+    </div>
+    <script src="popup.js"></script>
+</body>
+
+</html>

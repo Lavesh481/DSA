@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Mock Google Form</title>
+    <style>
+        body {
+            font-family: 'Roboto', arial, sans-serif;
+            background-color: #f0ebf8;
+            padding: 20px;
+        }
+
+        .form-card {
+            background: white;
+            border-radius: 8px;
+            border: 1px solid #dadce0;
+            margin-bottom: 12px;
+            padding: 24px;
+            max-width: 640px;
+            margin: auto;
+        }
+
+        .header {
+            border-top: 10px solid #673ab7;
+        }
+
+        .question-title {
+            font-size: 16px;
+            margin-bottom: 12px;
+        }
+
+        .radio-group {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .radio-option {
+            display: flex;
+            align-items: center;
+            padding: 8px 0;
+            cursor: pointer;
+        }
+
+        .radio-circle {
+            width: 20px;
+            height: 20px;
+            border: 2px solid #5f6368;
+            border-radius: 50%;
+            margin-right: 12px;
+            position: relative;
+        }
+
+        .radio-option[aria-checked="true"] .radio-circle {
+            border-color: #673ab7;
+        }
+
+        .radio-option[aria-checked="true"] .radio-circle::after {
+            content: '';
+            position: absolute;
+            width: 10px;
+            height: 10px;
+            background: #673ab7;
+            border-radius: 50%;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        input[role="textbox"] {
+            width: 100%;
+            border: none;
+            border-bottom: 1px solid #dadce0;
+            padding: 8px 0;
+            outline: none;
+            transition: border-bottom 0.2s;
+        }
+
+        input[role="textbox"]:focus {
+            border-bottom: 2px solid #673ab7;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="form-card header">
+        <h1>Untitled Quiz</h1>
+        <p>A mock to test FormBot's Google Forms compatibility.</p>
+    </div>
+
+    <div class="form-card" role="listitem">
+        <div class="question-title" role="heading">Name</div>
+        <input type="text" role="textbox" aria-label="Name" placeholder="Your answer">
+    </div>
+
+    <div class="form-card" role="listitem">
+        <div class="question-title" role="heading">What is 2+2?</div>
+        <div class="radio-group" role="radiogroup">
+            <div class="radio-option" role="radio" aria-label="3" aria-checked="false" tabindex="0">
+                <div class="radio-circle"></div>
+                <span>3</span>
+            </div>
+            <div class="radio-option" role="radio" aria-label="4" aria-checked="false" tabindex="0">
+                <div class="radio-circle"></div>
+                <span>4</span>
+            </div>
+            <div class="radio-option" role="radio" aria-label="5" aria-checked="false" tabindex="0">
+                <div class="radio-circle"></div>
+                <span>5</span>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Simple script to handle mock radio clicks
+        document.querySelectorAll('[role="radio"]').forEach(radio => {
+            radio.addEventListener('click', () => {
+                const group = radio.closest('[role="radiogroup"]');
+                group.querySelectorAll('[role="radio"]').forEach(r => r.setAttribute('aria-checked', 'false'));
+                radio.setAttribute('aria-checked', 'true');
+            });
+        });
+    </script>
+</body>
+
+</html>

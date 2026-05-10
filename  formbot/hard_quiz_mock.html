@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hard AI Quiz - FormBot Test</title>
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f0ebf8;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .form-container {
+            width: 600px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            border-top: 10px solid #673ab7;
+            padding: 0 0 20px 0;
+        }
+
+        .header {
+            padding: 20px;
+        }
+
+        .header h1 {
+            margin: 0;
+            font-size: 32px;
+        }
+
+        .header p {
+            color: #202124;
+            margin-top: 10px;
+        }
+
+        .question-box {
+            padding: 24px;
+            border: 1px solid #dadce0;
+            border-radius: 8px;
+            margin: 12px 20px;
+            background: white;
+        }
+
+        .question-title {
+            font-size: 16px;
+            font-weight: 500;
+            margin-bottom: 16px;
+            color: #202124;
+        }
+
+        .option {
+            display: flex;
+            align-items: center;
+            margin-bottom: 12px;
+            cursor: pointer;
+        }
+
+        .radio-circle {
+            width: 20px;
+            height: 20px;
+            border: 2px solid #5f6368;
+            border-radius: 50%;
+            margin-right: 12px;
+        }
+
+        .radio-option[aria-checked="true"] .radio-circle {
+            border-color: #673ab7;
+            background: radial-gradient(#673ab7 50%, transparent 50%);
+        }
+
+        .option-text {
+            font-size: 14px;
+            color: #202124;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="form-container">
+        <div class="header">
+            <h1>Ultimate General Knowledge Quiz</h1>
+            <p>Test the bot's AI capabilities with these complex questions.</p>
+        </div>
+
+        <!-- Question 1: History -->
+        <div class="geS5ne question-box" role="listitem">
+            <div role="heading" class="question-title">Who was the leader of the French Revolution's Committee of Public
+                Safety? *</div>
+            <div role="radio" aria-label="Maximilien Robespierre" class="radio-option option">
+                <div class="radio-circle"></div>
+                <span class="option-text">Maximilien Robespierre</span>
+            </div>
+            <div role="radio" aria-label="Napoleon Bonaparte" class="radio-option option">
+                <div class="radio-circle"></div>
+                <span class="option-text">Napoleon Bonaparte</span>
+            </div>
+            <div role="radio" aria-label="Georges Danton" class="radio-option option">
+                <div class="radio-circle"></div>
+                <span class="option-text">Georges Danton</span>
+            </div>
+        </div>
+
+        <!-- Question 2: Biology -->
+        <div class="geS5ne question-box" role="listitem">
+            <div role="heading" class="question-title">What is the primary function of the Golgi apparatus in a
+                eukaryotic cell? *</div>
+            <div role="radio" aria-label="Energy production" class="radio-option option">
+                <div class="radio-circle"></div>
+                <span class="option-text">Energy production</span>
+            </div>
+            <div role="radio" aria-label="Protein modification and packaging" class="radio-option option">
+                <div class="radio-circle"></div>
+                <span class="option-text">Protein modification and packaging</span>
+            </div>
+            <div role="radio" aria-label="DNA replication" class="radio-option option">
+                <div class="radio-circle"></div>
+                <span class="option-text">DNA replication</span>
+            </div>
+        </div>
+
+        <!-- Question 3: Computer Science -->
+        <div class="geS5ne question-box" role="listitem">
+            <div role="heading" class="question-title">In JavaScript, what is the value of: typeof NaN? *</div>
+            <div role="radio" aria-label="'number'" class="radio-option option">
+                <div class="radio-circle"></div>
+                <span class="option-text">'number'</span>
+            </div>
+            <div role="radio" aria-label="'undefined'" class="radio-option option">
+                <div class="radio-circle"></div>
+                <span class="option-text">'undefined'</span>
+            </div>
+            <div role="radio" aria-label="'NaN'" class="radio-option option">
+                <div class="radio-circle"></div>
+                <span class="option-text">'NaN'</span>
+            </div>
+        </div>
+
+        <!-- Question 4: Geography -->
+        <div class="geS5ne question-box" role="listitem">
+            <div role="heading" class="question-title">Which country has the longest coastline in the world? *</div>
+            <div role="radio" aria-label="Russia" class="radio-option option">
+                <div class="radio-circle"></div>
+                <span class="option-text">Russia</span>
+            </div>
+            <div role="radio" aria-label="Canada" class="radio-option option">
+                <div class="radio-circle"></div>
+                <span class="option-text">Canada</span>
+            </div>
+            <div role="radio" aria-label="Australia" class="radio-option option">
+                <div class="radio-circle"></div>
+                <span class="option-text">Australia</span>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Simple interactivity for the mock
+        document.querySelectorAll('.radio-option').forEach(opt => {
+            opt.onclick = function () {
+                const parent = this.closest('.geS5ne');
+                parent.querySelectorAll('.radio-option').forEach(r => r.setAttribute('aria-checked', 'false'));
+                this.setAttribute('aria-checked', 'true');
+            }
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Advanced ML Certification - Google Forms Mock</title>
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f0ebf8;
+            padding: 20px;
+        }
+
+        .form-container {
+            max-width: 640px;
+            margin: auto;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12);
+            border-top: 10px solid #673ab7;
+            padding: 0 0 20px 0;
+        }
+
+        .header {
+            padding: 24px;
+        }
+
+        .header h1 {
+            font-size: 32px;
+            margin: 0;
+        }
+
+        .header p {
+            color: #202124;
+            margin-top: 8px;
+        }
+
+        .question-box {
+            padding: 24px;
+            border: 1px solid #dadce0;
+            border-radius: 8px;
+            margin: 12px 20px;
+        }
+
+        .question-title {
+            font-size: 16px;
+            font-weight: 500;
+            margin-bottom: 20px;
+            color: #202124;
+        }
+
+        .option {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+            cursor: pointer;
+        }
+
+        .radio-circle {
+            width: 20px;
+            height: 20px;
+            border: 2px solid #5f6368;
+            border-radius: 50%;
+            margin-right: 12px;
+            position: relative;
+        }
+
+        [aria-checked="true"] .radio-circle {
+            border-color: #673ab7;
+        }
+
+        [aria-checked="true"] .radio-circle::after {
+            content: '';
+            position: absolute;
+            width: 10px;
+            height: 10px;
+            background: #673ab7;
+            border-radius: 50%;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="form-container">
+        <div class="header">
+            <h1>Advanced ML Mastery Quiz</h1>
+            <p>Test the bot's ability to handle complex deep learning theory.</p>
+        </div>
+
+        <!-- Question 1: Transformer Architecture -->
+        <div class="geS5ne question-box" role="listitem">
+            <div class="question-title" role="heading">1. In the Transformer architecture, why is 'Scaled Dot-Product
+                Attention' scaled by the square root of the dimension of the keys (√d_k)?</div>
+            <div class="option" role="radio" aria-label="To prevent gradients from becoming too small"
+                aria-checked="false">
+                <div class="radio-circle"></div>
+                <span>To prevent gradients from becoming too small (vanishing gradients)</span>
+            </div>
+            <div class="option" role="radio"
+                aria-label="To push the softmax into regions with extremely small gradients" aria-checked="false">
+                <div class="radio-circle"></div>
+                <span>To push the softmax function into regions with extremely small gradients</span>
+            </div>
+            <div class="option" role="radio" aria-label="To keep the variance of the dot products near 1"
+                aria-checked="false">
+                <div class="radio-circle"></div>
+                <span>To keep the variance of the dot products near 1, preventing large values</span>
+            </div>
+        </div>
+
+        <!-- Question 2: Optimization -->
+        <div class="geS5ne question-box" role="listitem">
+            <div class="question-title" role="heading">2. Which of the following optimizers uses both 'Momentum' and
+                'RMSProp' principles to adjust learning rates?</div>
+            <div class="option" role="radio" aria-label="SGD with Momentum" aria-checked="false">
+                <div class="radio-circle"></div>
+                <span>SGD with Momentum</span>
+            </div>
+            <div class="option" role="radio" aria-label="Adagrad" aria-checked="false">
+                <div class="radio-circle"></div>
+                <span>Adagrad</span>
+            </div>
+            <div class="option" role="radio" aria-label="Adam" aria-checked="false">
+                <div class="radio-circle"></div>
+                <span>Adam (Adaptive Moment Estimation)</span>
+            </div>
+        </div>
+
+        <!-- Question 3: Math -->
+        <div class="geS5ne question-box" role="listitem">
+            <div class="question-title" role="heading">3. What is the derivative of the Sigmoid function σ(x) in terms
+                of σ(x)?</div>
+            <div class="option" role="radio" aria-label="σ(x)(1 - σ(x))" aria-checked="false">
+                <div class="radio-circle"></div>
+                <span>σ(x)(1 - σ(x))</span>
+            </div>
+            <div class="option" role="radio" aria-label="σ(x)^2" aria-checked="false">
+                <div class="radio-circle"></div>
+                <span>σ(x)^2</span>
+            </div>
+            <div class="option" role="radio" aria-label="1 - σ(x)" aria-checked="false">
+                <div class="radio-circle"></div>
+                <span>1 - σ(x)</span>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.querySelectorAll('.option').forEach(opt => {
+            opt.onclick = function () {
+                const parent = this.closest('.geS5ne');
+                parent.querySelectorAll('.option').forEach(o => o.setAttribute('aria-checked', 'false'));
+                this.setAttribute('aria-checked', 'true');
+            };
+        });
+    </script>
+</body>
+
+</html>
